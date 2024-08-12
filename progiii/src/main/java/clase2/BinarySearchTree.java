@@ -28,6 +28,15 @@ public class BinarySearchTree {
         return searchBST(root.right, x);
     }
 
+    private static int altura(TreeNode root) {
+        if(root==null) { 
+            return -1;
+        } else {
+            return 1+ Math.max(altura(root.left),
+            altura(root.right));
+        }    
+    }
+
     public static void main(String[] args) {
         BinarySearchTree tree = new BinarySearchTree();
 
@@ -39,6 +48,7 @@ public class BinarySearchTree {
         root.left.right = new TreeNode(7);
         root.right.left = new TreeNode(15);
         root.right.right = new TreeNode(25);
+        root.right.right.right = new TreeNode(30);
 
         // Buscar el valor 7 en el árbol
         int valueToSearch = 7;
@@ -49,5 +59,7 @@ public class BinarySearchTree {
         } else {
             System.out.println("Valor no encontrado en el árbol.");
         }
+        System.out.println("Altura del arbole " + altura(root));
+
     }
 }
