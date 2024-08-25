@@ -1,13 +1,8 @@
 package clase2;
 
-
-
 import java.util.ArrayList;
 
 public class BusquedaBinariaCli {
-
-    // TODO: revisar errores
-    
     // Método para realizar la búsqueda binaria
     public static Cliente busquedaBinariaCli(
         ArrayList<Cliente> clientes , Cliente objetivo) {
