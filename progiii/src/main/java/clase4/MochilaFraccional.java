@@ -3,7 +3,7 @@ package clase4;
 
 import java.util.Arrays;
 
-public class MochilaFaccional {
+public class MochilaFraccional {
 
     // Clase para representar un objeto con su valor y peso
     static class Item {
