@@ -41,9 +41,9 @@ public class MochilaFaccional {
 
     public static void main(String[] args) {
         Item[] items = {
-            new Item(60, 10),
-            new Item(100, 20),
-            new Item(120, 30)
+            new Item(30, 10),
+            new Item(50, 20),
+            new Item(60, 30)
         };
 
         int W = 50; // Capacidad de la mochila
