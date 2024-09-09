@@ -12,9 +12,16 @@ class Arista implements Comparable<Arista> {
     }
 
     @Override
+    public int compareTo(Arista o) {
+        return this.peso - o.peso;
+    }
+
+    /*
+    @Override
     public int compareTo(Arista otra) {
         return this.peso - otra.peso;
     }
+    */
 }
 
 class UnionFind {
@@ -60,11 +67,10 @@ public class Kruskal {
         List<Arista> aristas = new ArrayList<>();
 
         // Agregar aristas al grafo
-        aristas.add(new Arista(0, 1, 10));
-        aristas.add(new Arista(0, 2, 6));
-        aristas.add(new Arista(0, 3, 5));
-        aristas.add(new Arista(1, 3, 15));
-        aristas.add(new Arista(2, 3, 4));
+        aristas.add(new Arista(0, 1, 1));
+        aristas.add(new Arista(0, 2, 4));
+        aristas.add(new Arista(1, 3, 3));
+        aristas.add(new Arista(2, 3, 2));
 
         // Crear el árbol de recubrimiento mínimo (MST) usando el algoritmo de Kruskal
         List<Arista> mst = kruskal(V, aristas);
