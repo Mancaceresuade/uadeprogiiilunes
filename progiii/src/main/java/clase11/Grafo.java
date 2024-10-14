@@ -68,29 +68,37 @@ public class Grafo {
 
     // Método main para ejecutar el ejemplo
     public static void main(String[] args) {
+        
+        // BFS
+        /*
         Grafo g = new Grafo(6); // Crear un grafo con 6 vértices (0 a 5)
 
         // Agregar aristas al grafo
         g.agregarArista(0, 1);
         g.agregarArista(0, 2);
+        g.agregarArista(0, 4);
         g.agregarArista(1, 3);
-        g.agregarArista(1, 4);
-        g.agregarArista(2, 5);
+        g.agregarArista(1, 5);
+        g.agregarArista(5, 4);
 
         System.out.println("Recorrido BFS empezando desde el vértice 0:");
 
         // Ejecutar BFS desde el vértice 0
         g.BFS(0);
+        */
 
-        Grafo g1 = new Grafo(6); // Crear un grafo con 6 vértices (0 a 5)
+        // DFS
+        Grafo g1 = new Grafo(7); // Crear un grafo con 6 vértices (0 a 6)
 
         // Agregar aristas al grafo
         g1.agregarArista(0, 1);
         g1.agregarArista(0, 2);
+        g1.agregarArista(0, 4);
         g1.agregarArista(1, 3);
-        g1.agregarArista(1, 4);
-        g1.agregarArista(2, 5);
-
+        g1.agregarArista(1, 5);
+        g1.agregarArista(2, 6);
+        g1.agregarArista(5, 4);
+ 
         System.out.println("");
         System.out.println("Recorrido DFS empezando desde el vértice 0:");
 
