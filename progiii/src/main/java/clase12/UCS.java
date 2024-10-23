@@ -1,5 +1,7 @@
 package clase12;
 
+import java.util.Map;
+
 class Node {
     String name;
     int cost;
